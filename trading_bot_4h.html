@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📊 Smart Swing Trader 4H — Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#141925; --panel2:#1b2233; --border:#222b3d;
+    --txt:#e6ebf5; --muted:#8a96ab; --green:#2ecc71; --red:#e74c3c;
+    --blue:#3b82f6; --yellow:#f1c40f; --purple:#a855f7;
+    --grad:linear-gradient(135deg,#3b82f6,#a855f7);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    background:radial-gradient(1200px 600px at 20% -10%,#172033 0%,var(--bg) 55%);
+    color:var(--txt);min-height:100vh;padding:28px 18px 60px;
+  }
+  .wrap{max-width:1180px;margin:0 auto}
+  header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-bottom:24px}
+  .title h1{font-size:1.5rem;font-weight:700;letter-spacing:-.5px}
+  .title p{color:var(--muted);font-size:.85rem;margin-top:4px}
+  .badge{background:var(--grad);padding:6px 14px;border-radius:999px;font-weight:600;font-size:.8rem;box-shadow:0 6px 20px rgba(59,130,246,.35);white-space:nowrap}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:middle}
+  .dot.on{background:var(--green);box-shadow:0 0 8px var(--green)} .dot.off{background:var(--red)}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px;margin-bottom:18px}
+  .kpi{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:18px;position:relative;overflow:hidden}
+  .kpi::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:var(--accent,var(--blue))}
+  .kpi .label{color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+  .kpi .val{font-size:1.7rem;font-weight:700;letter-spacing:-1px}
+  .kpi .sub{font-size:.72rem;color:var(--muted);margin-top:4px}
+  .grid{display:grid;gap:16px;margin-bottom:16px}
+  .g2{grid-template-columns:1.6fr 1fr}
+  @media(max-width:820px){.g2{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:20px}
+  .card h2{font-size:.95rem;font-weight:600;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+  .card .hint{color:var(--muted);font-size:.78rem;margin-bottom:14px}
+  .chart-box{position:relative;height:300px}
+  .chart-sm{position:relative;height:240px}
+  table{width:100%;border-collapse:collapse;font-size:.85rem}
+  th,td{padding:9px 8px;text-align:right;border-bottom:1px solid var(--border)}
+  th:first-child,td:first-child{text-align:left}
+  th{color:var(--muted);font-weight:500;font-size:.72rem;text-transform:uppercase;letter-spacing:.4px}
+  tbody tr:hover{background:var(--panel2)}
+  .pos{color:var(--green)} .neg{color:var(--red)} .neu{color:var(--muted)}
+  .pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:.72rem;font-weight:600}
+  .pill.win{background:rgba(46,204,113,.15);color:var(--green)}
+  .pill.loss{background:rgba(231,76,60,.15);color:var(--red)}
+  .pill.flat{background:rgba(138,150,171,.15);color:var(--muted)}
+  .pill.long{background:rgba(46,204,113,.15);color:var(--green)}
+  .pill.short{background:rgba(231,76,60,.15);color:var(--red)}
+  .reset-note{background:rgba(241,196,15,.08);border:1px solid rgba(241,196,15,.3);border-radius:12px;padding:12px 14px;font-size:.82rem;color:#f5d97a;margin-bottom:16px;display:flex;gap:10px}
+  .empty{color:var(--muted);font-size:.85rem;padding:18px 0;text-align:center}
+  .timeline{display:flex;flex-direction:column;gap:14px}
+  .tl-item{display:flex;gap:14px}
+  .tl-dot{width:11px;height:11px;border-radius:50%;background:var(--grad);margin-top:5px;flex-shrink:0;box-shadow:0 0 0 4px rgba(59,130,246,.12)}
+  .tl-item h4{font-size:.85rem;font-weight:600}
+  .tl-item p{font-size:.78rem;color:var(--muted);margin-top:3px;line-height:1.5}
+  footer{text-align:center;color:var(--muted);font-size:.75rem;margin-top:30px}
+  #err{display:none;background:rgba(231,76,60,.1);border:1px solid rgba(231,76,60,.4);border-radius:12px;padding:16px;color:#f5a59b;font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="title">
+      <h1>📊 Smart Swing Trader 4H</h1>
+      <p id="subtitle">Dashboard interna · paper trading su Bitget · budget 100€</p>
+    </div>
+    <div class="badge" id="badge">caricamento…</div>
+  </header>
+
+  <div id="err">⚠️ Dati non raggiungibili. La dashboard legge <code id="src"></code> — verifica che la GitHub Action abbia pubblicato il file almeno una volta.</div>
+
+  <div id="content" style="display:none">
+    <div class="kpis" id="kpis"></div>
+
+    <div class="reset-note">
+      <span>⚠️</span>
+      <span><b>Nota reset:</b> tra il 5 e il 7 maggio il saldo è stato riportato manualmente da 97.96€ a 100.00€ (+2.04€). I saldi dall'11/05 in poi includono questo +2.04€ — non ricalcolati, il reset è solo segnalato sulla curva (punto giallo).</span>
+    </div>
+
+    <div class="grid g2">
+      <div class="card">
+        <h2>💰 Equity curve</h2>
+        <div class="hint">Andamento del saldo settimanale dall'avvio del bot</div>
+        <div class="chart-box"><canvas id="equity"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>🎯 Esiti</h2>
+        <div class="hint">Win / Loss / Break-even (settimana corrente)</div>
+        <div class="chart-sm"><canvas id="donut"></canvas></div>
+      </div>
+    </div>
+
+    <div class="grid g2">
+      <div class="card">
+        <h2>📈 Posizioni aperte</h2>
+        <div class="hint">Stato live al momento dell'ultimo aggiornamento</div>
+        <div id="positions"></div>
+      </div>
+      <div class="card">
+        <h2>🧭 Evoluzione del bot</h2>
+        <div class="hint">Versioni e fix principali</div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>📊 PnL settimanale</h2>
+        <div class="hint">Guadagni e perdite per settimana (€)</div>
+        <div class="chart-box"><canvas id="pnl"></canvas></div>
+      </div>
+    </div>
+
+    <div class="grid g2">
+      <div class="card">
+        <h2>🗂️ Dettaglio settimanale</h2>
+        <div class="hint">Una riga per settimana</div>
+        <table id="tbl"><thead><tr>
+          <th>Settimana</th><th>Saldo</th><th>PnL</th><th>R</th><th>Win</th><th></th>
+        </tr></thead><tbody></tbody></table>
+      </div>
+      <div class="card">
+        <h2>📋 Trade recenti</h2>
+        <div class="hint">Ultime chiusure della settimana</div>
+        <table id="trades"><thead><tr>
+          <th>Moneta</th><th>Dir</th><th>PnL%</th><th>€</th><th>Uscita</th>
+        </tr></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">Smart Swing Trader 4H · R:R 2:1 · target 6%/trade</footer>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════════
+//  FONTE DATI — il bot rigenera questo file da solo ogni ~5 min e una
+//  GitHub Action lo pubblica qui. La dashboard NON va mai modificata.
+//  Se sposti la dashboard in un altro repo, cambia solo questo URL.
+// ═══════════════════════════════════════════════════════════════════
+const RAW_URL = 'https://raw.githubusercontent.com/ivanx519/swing-4h-data/master/dashboard_data.json';
+
+const versions = [
+  {v:'v2.6 · giu', t:'Freni tattici', d:'F&G estremi neutri, circuit breaker per-direzione, cap unidirezionale, stop-daily sulle conferme.'},
+  {v:'v2.5 · giu', t:'Ratchet & robustezza', d:'Ratchet difesa-profitto, filtro BTC calo 24h, weekend sab→lun, fix concorrenza saldo.'},
+  {v:'v2.4 · mag', t:'Fondamenta', d:'Gate RSI rimosso, soglia doji 6%, trailing ridisegnato con hard TP al 2.5%.'},
+];
+
+const fmt=(n,d=2)=>(n>=0?'+':'')+Number(n).toFixed(d);
+let charts=[];
+
+async function load(){
+  let data=null;
+  for(const url of [RAW_URL, 'dashboard_data.json']){
+    try{ const r=await fetch(url+'?t='+Date.now()); if(r.ok){ data=await r.json(); break; } }catch(e){}
+  }
+  if(!data){ document.getElementById('badge').textContent='offline'; document.getElementById('src').textContent=RAW_URL; document.getElementById('err').style.display='block'; return; }
+  render(data);
+}
+
+function render(data){
+  const weeks=data.settimane||[];
+  const meta=data.meta||{};
+  document.getElementById('content').style.display='block';
+  document.getElementById('err').style.display='none';
+  document.getElementById('badge').innerHTML=`<span class="dot ${meta.bot_attivo?'on':'off'}"></span>v${meta.version||'?'} · agg. ${meta.generato||'?'}`;
+  document.getElementById('subtitle').textContent=`Paper trading su Bitget · budget ${meta.budget||100}€ · BTC: ${meta.btc||'?'} · dati dal 13/04/2026`;
+
+  // KPI
+  const last=weeks[weeks.length-1]||{saldo:meta.saldo||100};
+  const saldo=meta.saldo!=null?meta.saldo:last.saldo;
+  const peak=Math.max(...weeks.map(x=>x.saldo));
+  const traded=weeks.filter(x=>x.tot);
+  const totWin=traded.reduce((a,x)=>a+(x.win||0),0);
+  const totTr=traded.reduce((a,x)=>a+(x.tot||0),0);
+  const wr=totTr?Math.round(totWin/totTr*100):0;
+  const best=weeks.reduce((a,x)=>x.pnl>a.pnl?x:a,weeks[0]);
+  const dd=((Math.min(...weeks.map(x=>x.saldo))-peak)/peak*100);
+  const kpis=[
+    {label:'Saldo attuale',val:Number(saldo).toFixed(2)+'€',sub:'da 100€ iniziali',acc:saldo>=100?'var(--green)':'var(--red)'},
+    {label:'PnL totale',val:fmt(saldo-100)+'€',sub:'reset +2.04€ incluso',acc:saldo>=100?'var(--green)':'var(--red)'},
+    {label:'Win rate',val:wr+'%',sub:totWin+' win / '+totTr+' trade',acc:'var(--blue)'},
+    {label:'Settimane',val:weeks.length,sub:'tracciate',acc:'var(--purple)'},
+    {label:'Miglior sett.',val:fmt(best.pnl)+'€',sub:best.w,acc:'var(--green)'},
+    {label:'Max drawdown',val:dd.toFixed(1)+'%',sub:'dal picco '+peak.toFixed(2)+'€',acc:'var(--red)'},
+  ];
+  document.getElementById('kpis').innerHTML=kpis.map(k=>`<div class="kpi" style="--accent:${k.acc}"><div class="label">${k.label}</div><div class="val">${k.val}</div><div class="sub">${k.sub}</div></div>`).join('');
+
+  // Tabella settimane
+  document.querySelector('#tbl tbody').innerHTML=weeks.map(x=>{
+    const cls=x.pnl>0.02?'pos':(x.pnl<-0.02?'neg':'neu');
+    const pill=x.pnl>0.02?'<span class="pill win">▲</span>':(x.pnl<-0.02?'<span class="pill loss">▼</span>':'<span class="pill flat">—</span>');
+    return `<tr><td>${x.w}${x.note?` <span class="neu" style="font-size:.72rem">· ${x.note}</span>`:''}</td><td>${Number(x.saldo).toFixed(2)}€</td><td class="${cls}">${fmt(x.pnl)}€</td><td class="${x.r>0?'pos':x.r<0?'neg':'neu'}">${fmt(x.r)}</td><td>${x.tot?`${x.win}/${x.tot}`:'—'}</td><td>${pill}</td></tr>`;
+  }).join('');
+
+  // Posizioni aperte
+  const pos=data.posizioni_aperte||[];
+  const fasi=['SL puro','BE','Trail 1.0%','Trail 1.5%','Target'];
+  document.getElementById('positions').innerHTML = pos.length
+    ? `<table><thead><tr><th>Moneta</th><th>Dir</th><th>PnL%</th><th>Fase</th><th>Ore</th></tr></thead><tbody>`+
+      pos.map(p=>`<tr><td><b>${p.moneta}</b></td><td><span class="pill ${p.side}">${p.side.toUpperCase()}</span></td><td class="${p.pnl_perc>=0?'pos':'neg'}">${fmt(p.pnl_perc)}%</td><td class="neu">${fasi[p.fase]||p.fase}</td><td class="neu">${p.ore}h</td></tr>`).join('')+`</tbody></table>`
+    : `<div class="empty">Nessuna posizione aperta in questo momento.</div>`;
+
+  // Trade recenti
+  const tr=(data.trade_recenti||[]).slice().reverse();
+  document.querySelector('#trades tbody').innerHTML = tr.length
+    ? tr.map(t=>`<tr><td><b>${t.moneta}</b></td><td><span class="pill ${t.side}">${t.side.toUpperCase()}</span></td><td class="${t.pnl_perc>=0?'pos':'neg'}">${fmt(t.pnl_perc)}%</td><td class="${t.pnl_euro>=0?'pos':'neg'}">${fmt(t.pnl_euro)}</td><td class="neu" style="font-size:.78rem">${t.motivo}</td></tr>`).join('')
+    : `<tr><td colspan="5" class="empty">Nessun trade chiuso questa settimana.</td></tr>`;
+
+  // Timeline
+  document.getElementById('timeline').innerHTML=versions.map(v=>`<div class="tl-item"><div class="tl-dot"></div><div><h4>${v.t} <span class="neu" style="font-weight:400">· ${v.v}</span></h4><p>${v.d}</p></div></div>`).join('');
+
+  document.getElementById('footer').textContent=`Aggiornato il ${meta.generato||'?'} · generato dal bot · Smart Swing Trader 4H`;
+
+  drawCharts(weeks, data.funnel||{});
+}
+
+function drawCharts(weeks, funnel){
+  charts.forEach(c=>c.destroy()); charts=[];
+  Chart.defaults.color='#8a96ab'; Chart.defaults.font.family="'Inter',sans-serif";
+  const gridC='rgba(255,255,255,.05)';
+
+  charts.push(new Chart(document.getElementById('equity'),{type:'line',
+    data:{labels:weeks.map(x=>x.w),datasets:[{data:weeks.map(x=>x.saldo),borderColor:'#3b82f6',borderWidth:2.5,fill:true,tension:.35,pointRadius:4,
+      pointBackgroundColor:weeks.map(x=>(x.note||'').includes('reset')?'#f1c40f':'#3b82f6'),pointBorderColor:'#0b0e14',pointBorderWidth:2,
+      backgroundColor:(c)=>{const g=c.chart.ctx.createLinearGradient(0,0,0,300);g.addColorStop(0,'rgba(59,130,246,.35)');g.addColorStop(1,'rgba(59,130,246,0)');return g;}}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.y.toFixed(2)+'€'}}},scales:{y:{grid:{color:gridC},ticks:{callback:v=>v+'€'}},x:{grid:{display:false}}}}}));
+
+  charts.push(new Chart(document.getElementById('pnl'),{type:'bar',
+    data:{labels:weeks.map(x=>x.w),datasets:[{data:weeks.map(x=>x.pnl),borderRadius:6,backgroundColor:weeks.map(x=>x.pnl>=0?'rgba(46,204,113,.85)':'rgba(231,76,60,.85)')}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmt(c.parsed.y)+'€'}}},scales:{y:{grid:{color:gridC},ticks:{callback:v=>v+'€'}},x:{grid:{display:false}}}}}));
+
+  charts.push(new Chart(document.getElementById('donut'),{type:'doughnut',
+    data:{labels:['Win','Loss','BE'],datasets:[{data:[funnel.win||0,funnel.loss||0,funnel.be||0],backgroundColor:['#2ecc71','#e74c3c','#8a96ab'],borderColor:'#141925',borderWidth:3}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'68%',plugins:{legend:{position:'bottom',labels:{padding:14,usePointStyle:true}}}}}));
+}
+
+load();
+setInterval(load, 5*60*1000); // ricarica ogni 5 min
+</script>
+</body>
+</html>

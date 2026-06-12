@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.8",
-  "generato": "12/06/2026 19:14",
+  "generato": "12/06/2026 21:32",
   "saldo": 98.74,
   "budget": 100.0,
   "bot_attivo": true,
@@ -65,7 +65,7 @@
   }
  ],
  "funnel": {
-  "grezzi": 508,
+  "grezzi": 538,
   "qualificati": 42,
   "pendenti": 42,
   "entrati": 22,
@@ -76,7 +76,7 @@
  "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": 0.635,
@@ -84,7 +84,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "XRP",
    "side": "short",
    "pnl_perc": 1.038,
@@ -92,7 +92,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "LINK",
    "side": "short",
    "pnl_perc": 0.596,
@@ -100,7 +100,7 @@
    "motivo": "chiusura_massa"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "SOL",
    "side": "short",
    "pnl_perc": 1.013,
@@ -108,7 +108,7 @@
    "motivo": "chiusura_massa"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "INJ",
    "side": "short",
    "pnl_perc": 2.359,
@@ -116,7 +116,7 @@
    "motivo": "trailing_f3"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "SUI",
    "side": "short",
    "pnl_perc": -3.064,
@@ -124,7 +124,7 @@
    "motivo": "stop_loss"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "DOT",
    "side": "short",
    "pnl_perc": -3.017,
@@ -132,7 +132,7 @@
    "motivo": "stop_loss"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "NEAR",
    "side": "short",
    "pnl_perc": -3.569,
@@ -140,7 +140,7 @@
    "motivo": "stop_loss"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "OP",
    "side": "short",
    "pnl_perc": 0.218,
@@ -148,7 +148,7 @@
    "motivo": "chiusura_manuale"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "XRP",
    "side": "short",
    "pnl_perc": 0.263,
@@ -156,7 +156,7 @@
    "motivo": "chiusura_manuale"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "FET",
    "side": "short",
    "pnl_perc": 1.276,
@@ -164,7 +164,7 @@
    "motivo": "chiusura_manuale"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": 0.275,
@@ -172,7 +172,7 @@
    "motivo": "chiusura_manuale"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "HBAR",
    "side": "short",
    "pnl_perc": -3.012,
@@ -180,7 +180,7 @@
    "motivo": "stop_loss"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "TRX",
    "side": "short",
    "pnl_perc": 1.535,
@@ -188,7 +188,7 @@
    "motivo": "sl_manuale_+1.65pct"
   },
   {
-   "data": "12/06 19:14",
+   "data": "12/06 21:32",
    "moneta": "FET",
    "side": "short",
    "pnl_perc": -3.13,

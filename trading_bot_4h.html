@@ -60,6 +60,9 @@
   .tl-item p{font-size:.78rem;color:var(--muted);margin-top:3px;line-height:1.5}
   footer{text-align:center;color:var(--muted);font-size:.75rem;margin-top:30px}
   #err{display:none;background:rgba(231,76,60,.1);border:1px solid rgba(231,76,60,.4);border-radius:12px;padding:16px;color:#f5a59b;font-size:.85rem}
+.ecg{background:radial-gradient(circle at 50% 45%,#04130b,#010704);border:1px solid rgba(0,255,138,.25);box-shadow:inset 0 0 35px rgba(0,255,138,.08),0 0 18px rgba(0,255,138,.05)}
+  @keyframes ecgpulse{0%,100%{opacity:.55}50%{opacity:1}}
+  .ecg-label{color:#00ff8a;font-family:monospace;letter-spacing:1px;animation:ecgpulse 1.6s infinite}
 </style>
 </head>
 <body>
@@ -86,7 +89,7 @@
       <div class="card">
         <h2>💰 Equity curve</h2>
         <div class="hint">Andamento del saldo settimanale dall'avvio del bot</div>
-        <div class="chart-box"><canvas id="equity"></canvas></div>
+        <div class="chart-box ecg"><canvas id="equity"></canvas></div>
       </div>
       <div class="card">
         <h2>🎯 Esiti</h2>
@@ -169,7 +172,7 @@ function render(data){
   document.getElementById('content').style.display='block';
   document.getElementById('err').style.display='none';
   document.getElementById('badge').innerHTML=`<span class="dot ${meta.bot_attivo?'on':'off'}"></span>v${meta.version||'?'} · agg. ${meta.generato||'?'}`;
-  document.getElementById('subtitle').textContent=`Paper trading su Bitget · budget ${meta.budget||100}€ · BTC: ${meta.btc||'?'} · dati dal 13/04/2026`;
+  document.getElementById('subtitle').textContent=`Paper trading su Bitget · budget ${meta.budget||100}€ · BTC: ${meta.btc||'?'} · dati dal 04/05/2026`;
 
   // KPI
   const last=weeks[weeks.length-1]||{saldo:meta.saldo||100};
@@ -225,11 +228,15 @@ function drawCharts(weeks, funnel){
   Chart.defaults.color='#8a96ab'; Chart.defaults.font.family="'Inter',sans-serif";
   const gridC='rgba(255,255,255,.05)';
 
+  // 🏥 Equity curve stile MONITOR OSPEDALE (ECG): linea verde fosforescente con glow
+  const ECG='#00ff8a';
+  const ecgGlow={id:'ecgGlow',beforeDatasetDraw(ch,a){if(a.meta.type==='line'){const x=ch.ctx;x.save();x.shadowColor='rgba(0,255,138,.85)';x.shadowBlur=14;}},afterDatasetDraw(ch,a){if(a.meta.type==='line')ch.ctx.restore();}};
   charts.push(new Chart(document.getElementById('equity'),{type:'line',
-    data:{labels:weeks.map(x=>x.w),datasets:[{data:weeks.map(x=>x.saldo),borderColor:'#3b82f6',borderWidth:2.5,fill:true,tension:.35,pointRadius:4,
-      pointBackgroundColor:weeks.map(x=>(x.note||'').includes('reset')?'#f1c40f':'#3b82f6'),pointBorderColor:'#0b0e14',pointBorderWidth:2,
-      backgroundColor:(c)=>{const g=c.chart.ctx.createLinearGradient(0,0,0,300);g.addColorStop(0,'rgba(59,130,246,.35)');g.addColorStop(1,'rgba(59,130,246,0)');return g;}}]},
-    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.y.toFixed(2)+'€'}}},scales:{y:{grid:{color:gridC},ticks:{callback:v=>v+'€'}},x:{grid:{display:false}}}}}));
+    data:{labels:weeks.map(x=>x.w),datasets:[{data:weeks.map(x=>x.saldo),borderColor:ECG,borderWidth:2,fill:true,tension:.4,
+      pointRadius:weeks.map((x,i)=>i===weeks.length-1?6:0),pointHoverRadius:6,
+      pointBackgroundColor:ECG,pointBorderColor:'#021008',pointBorderWidth:2,
+      backgroundColor:(c)=>{const g=c.chart.ctx.createLinearGradient(0,0,0,300);g.addColorStop(0,'rgba(0,255,138,.22)');g.addColorStop(1,'rgba(0,255,138,0)');return g;}}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.y.toFixed(2)+'€'}}},scales:{y:{grid:{color:'rgba(0,255,138,.10)'},ticks:{color:'rgba(0,255,138,.7)',callback:v=>v+'€'}},x:{grid:{color:'rgba(0,255,138,.05)'},ticks:{color:'rgba(0,255,138,.5)'}}}},plugins:[ecgGlow]}));
 
   charts.push(new Chart(document.getElementById('pnl'),{type:'bar',
     data:{labels:weeks.map(x=>x.w),datasets:[{data:weeks.map(x=>x.pnl),borderRadius:6,backgroundColor:weeks.map(x=>x.pnl>=0?'rgba(46,204,113,.85)':'rgba(231,76,60,.85)')}]},

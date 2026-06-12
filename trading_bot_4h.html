@@ -94,7 +94,7 @@
       <div class="card">
         <h2>🎯 Esiti</h2>
         <div class="hint">Win / Loss / Break-even (settimana corrente)</div>
-        <div class="chart-sm"><canvas id="donut"></canvas></div>
+        <div class="chart-sm ecg"><canvas id="donut"></canvas></div>
       </div>
     </div>
 
@@ -115,7 +115,7 @@
       <div class="card">
         <h2>📊 PnL settimanale</h2>
         <div class="hint">Guadagni e perdite per settimana (€)</div>
-        <div class="chart-box"><canvas id="pnl"></canvas></div>
+        <div class="chart-box ecg"><canvas id="pnl"></canvas></div>
       </div>
     </div>
 
@@ -230,7 +230,7 @@ function drawCharts(weeks, funnel){
 
   // 🏥 Equity curve stile MONITOR OSPEDALE (ECG): linea verde fosforescente con glow
   const ECG='#00ff8a';
-  const ecgGlow={id:'ecgGlow',beforeDatasetDraw(ch,a){if(a.meta.type==='line'){const x=ch.ctx;x.save();x.shadowColor='rgba(0,255,138,.85)';x.shadowBlur=14;}},afterDatasetDraw(ch,a){if(a.meta.type==='line')ch.ctx.restore();}};
+  const G=(t)=>t==='line'||t==='bar'; const ecgGlow={id:'ecgGlow',beforeDatasetDraw(ch,a){if(G(a.meta.type)){const x=ch.ctx;x.save();x.shadowColor=a.meta.type==='bar'?'rgba(0,255,138,.55)':'rgba(0,255,138,.85)';x.shadowBlur=a.meta.type==='bar'?10:14;}},afterDatasetDraw(ch,a){if(G(a.meta.type))ch.ctx.restore();}};
   charts.push(new Chart(document.getElementById('equity'),{type:'line',
     data:{labels:weeks.map(x=>x.w),datasets:[{data:weeks.map(x=>x.saldo),borderColor:ECG,borderWidth:2,fill:true,tension:.4,
       pointRadius:weeks.map((x,i)=>i===weeks.length-1?6:0),pointHoverRadius:6,
@@ -239,12 +239,12 @@ function drawCharts(weeks, funnel){
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.y.toFixed(2)+'€'}}},scales:{y:{grid:{color:'rgba(0,255,138,.10)'},ticks:{color:'rgba(0,255,138,.7)',callback:v=>v+'€'}},x:{grid:{color:'rgba(0,255,138,.05)'},ticks:{color:'rgba(0,255,138,.5)'}}}},plugins:[ecgGlow]}));
 
   charts.push(new Chart(document.getElementById('pnl'),{type:'bar',
-    data:{labels:weeks.map(x=>x.w),datasets:[{data:weeks.map(x=>x.pnl),borderRadius:6,backgroundColor:weeks.map(x=>x.pnl>=0?'rgba(46,204,113,.85)':'rgba(231,76,60,.85)')}]},
-    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmt(c.parsed.y)+'€'}}},scales:{y:{grid:{color:gridC},ticks:{callback:v=>v+'€'}},x:{grid:{display:false}}}}}));
+    data:{labels:weeks.map(x=>x.w),datasets:[{data:weeks.map(x=>x.pnl),borderRadius:4,borderWidth:0,backgroundColor:weeks.map(x=>x.pnl>=0?'rgba(0,255,138,.85)':'rgba(255,59,78,.85)')}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmt(c.parsed.y)+'€'}}},scales:{y:{grid:{color:'rgba(0,255,138,.10)'},ticks:{color:'rgba(0,255,138,.6)',callback:v=>v+'€'}},x:{grid:{display:false},ticks:{color:'rgba(0,255,138,.5)'}}}},plugins:[ecgGlow]}));
 
   charts.push(new Chart(document.getElementById('donut'),{type:'doughnut',
-    data:{labels:['Win','Loss','BE'],datasets:[{data:[funnel.win||0,funnel.loss||0,funnel.be||0],backgroundColor:['#2ecc71','#e74c3c','#8a96ab'],borderColor:'#141925',borderWidth:3}]},
-    options:{responsive:true,maintainAspectRatio:false,cutout:'68%',plugins:{legend:{position:'bottom',labels:{padding:14,usePointStyle:true}}}}}));
+    data:{labels:['Win','Loss','BE'],datasets:[{data:[funnel.win||0,funnel.loss||0,funnel.be||0],backgroundColor:['#00ff8a','#ff3b4e','#2a3550'],borderColor:'#020a06',borderWidth:3}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'68%',plugins:{legend:{position:'bottom',labels:{padding:14,usePointStyle:true,color:'#7fffc4'}}}}}));
 }
 
 load();

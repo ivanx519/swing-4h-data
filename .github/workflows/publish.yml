@@ -19,3 +19,5 @@ jobs:
           git add dashboard_data.json
           git commit -m "dati $(date -u +%FT%TZ)" || exit 0
           git push
+
+# dashboard Smart Swing Trader 4H — pubblica dashboard_data.json dal VPS

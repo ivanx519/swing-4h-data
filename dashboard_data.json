@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.8",
-  "generato": "16/06/2026 14:27",
-  "saldo": 98.74,
+  "generato": "16/06/2026 19:44",
+  "saldo": 98.91,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "SHORT"
@@ -64,43 +64,43 @@
   },
   {
    "w": "16/06",
-   "saldo": 98.74,
-   "pnl": 0,
-   "r": 0.0,
-   "win": 0,
-   "tot": 0,
+   "saldo": 98.91,
+   "pnl": 0.17,
+   "r": 0.21,
+   "win": 1,
+   "tot": 1,
    "note": "in corso",
    "live": true
   }
  ],
  "funnel": {
-  "grezzi": 422,
-  "qualificati": 2,
-  "pendenti": 2,
+  "grezzi": 503,
+  "qualificati": 3,
+  "pendenti": 3,
   "entrati": 2,
-  "win": 0,
+  "win": 1,
   "loss": 0,
   "be": 0
  },
  "posizioni_aperte": [
   {
-   "moneta": "DOGE",
-   "side": "short",
-   "entry": 0.08741,
-   "prezzo": 0.08834,
-   "pnl_perc": -1.06,
-   "fase": 0,
-   "ore": 8.4
-  },
-  {
    "moneta": "TRX",
    "side": "short",
    "entry": 0.317,
-   "prezzo": 0.31708,
-   "pnl_perc": -0.03,
+   "prezzo": 0.3174,
+   "pnl_perc": -0.13,
    "fase": 0,
-   "ore": 0.4
+   "ore": 5.7
   }
  ],
- "trade_recenti": []
+ "trade_recenti": [
+  {
+   "data": "16/06 19:44",
+   "moneta": "DOGE",
+   "side": "short",
+   "pnl_perc": 0.618,
+   "pnl_euro": 0.172,
+   "motivo": "ratchet_profit"
+  }
+ ]
 }

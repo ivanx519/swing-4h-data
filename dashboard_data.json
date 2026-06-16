@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.8",
-  "generato": "16/06/2026 19:44",
+  "generato": "16/06/2026 23:15",
   "saldo": 98.91,
   "budget": 100.0,
   "bot_attivo": true,
@@ -74,10 +74,10 @@
   }
  ],
  "funnel": {
-  "grezzi": 503,
+  "grezzi": 551,
   "qualificati": 3,
   "pendenti": 3,
-  "entrati": 2,
+  "entrati": 3,
   "win": 1,
   "loss": 0,
   "be": 0
@@ -87,15 +87,24 @@
    "moneta": "TRX",
    "side": "short",
    "entry": 0.317,
-   "prezzo": 0.3174,
-   "pnl_perc": -0.13,
+   "prezzo": 0.31585,
+   "pnl_perc": 0.36,
    "fase": 0,
-   "ore": 5.7
+   "ore": 9.2
+  },
+  {
+   "moneta": "FET",
+   "side": "short",
+   "entry": 0.2073,
+   "prezzo": 0.2091,
+   "pnl_perc": -0.87,
+   "fase": 0,
+   "ore": 1.9
   }
  ],
  "trade_recenti": [
   {
-   "data": "16/06 19:44",
+   "data": "16/06 23:15",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": 0.618,

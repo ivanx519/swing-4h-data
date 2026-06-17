@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.8",
-  "generato": "17/06/2026 22:52",
+  "generato": "18/06/2026 00:49",
   "saldo": 98.51,
   "budget": 100.0,
   "bot_attivo": true,
@@ -63,7 +63,7 @@
    "note": ""
   },
   {
-   "w": "17/06",
+   "w": "18/06",
    "saldo": 98.51,
    "pnl": -0.23,
    "r": -0.15,
@@ -87,15 +87,15 @@
    "moneta": "BTC",
    "side": "short",
    "entry": 64275.7,
-   "prezzo": 64266.5,
-   "pnl_perc": 0.01,
+   "prezzo": 64360.5,
+   "pnl_perc": -0.13,
    "fase": 0,
-   "ore": 0.9
+   "ore": 2.8
   }
  ],
  "trade_recenti": [
   {
-   "data": "17/06 22:52",
+   "data": "18/06 00:49",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": 0.618,
@@ -103,7 +103,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "17/06 22:52",
+   "data": "18/06 00:49",
    "moneta": "FET",
    "side": "short",
    "pnl_perc": 0.675,
@@ -111,7 +111,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "17/06 22:52",
+   "data": "18/06 00:49",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": -0.007,
@@ -119,7 +119,7 @@
    "motivo": "break_even"
   },
   {
-   "data": "17/06 22:52",
+   "data": "18/06 00:49",
    "moneta": "TRX",
    "side": "short",
    "pnl_perc": -1.479,

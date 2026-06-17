@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.8",
-  "generato": "17/06/2026 01:06",
-  "saldo": 98.91,
+  "generato": "17/06/2026 03:38",
+  "saldo": 99.1,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "SHORT"
@@ -64,11 +64,11 @@
   },
   {
    "w": "17/06",
-   "saldo": 98.91,
-   "pnl": 0.17,
-   "r": 0.21,
-   "win": 1,
-   "tot": 1,
+   "saldo": 99.1,
+   "pnl": 0.36,
+   "r": 0.22,
+   "win": 2,
+   "tot": 2,
    "note": "in corso",
    "live": true
   }
@@ -78,7 +78,7 @@
   "qualificati": 3,
   "pendenti": 3,
   "entrati": 3,
-  "win": 1,
+  "win": 2,
   "loss": 0,
   "be": 0
  },
@@ -87,28 +87,27 @@
    "moneta": "TRX",
    "side": "short",
    "entry": 0.317,
-   "prezzo": 0.3165,
-   "pnl_perc": 0.16,
+   "prezzo": 0.31646,
+   "pnl_perc": 0.17,
    "fase": 0,
-   "ore": 11.1
-  },
-  {
-   "moneta": "FET",
-   "side": "short",
-   "entry": 0.2073,
-   "prezzo": 0.2069,
-   "pnl_perc": 0.19,
-   "fase": 0,
-   "ore": 3.8
+   "ore": 13.6
   }
  ],
  "trade_recenti": [
   {
-   "data": "17/06 01:06",
+   "data": "17/06 03:38",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": 0.618,
    "pnl_euro": 0.172,
+   "motivo": "ratchet_profit"
+  },
+  {
+   "data": "17/06 03:38",
+   "moneta": "FET",
+   "side": "short",
+   "pnl_perc": 0.675,
+   "pnl_euro": 0.192,
    "motivo": "ratchet_profit"
   }
  ]

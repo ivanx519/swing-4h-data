@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.8",
-  "generato": "18/06/2026 16:21",
-  "saldo": 98.51,
+  "generato": "18/06/2026 22:35",
+  "saldo": 100.46,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "SHORT"
@@ -64,47 +64,28 @@
   },
   {
    "w": "18/06",
-   "saldo": 98.51,
-   "pnl": -0.23,
-   "r": -0.15,
-   "win": 2,
-   "tot": 4,
+   "saldo": 100.46,
+   "pnl": 1.72,
+   "r": 0.23,
+   "win": 4,
+   "tot": 6,
    "note": "in corso",
    "live": true
   }
  ],
  "funnel": {
-  "grezzi": 973,
-  "qualificati": 6,
-  "pendenti": 6,
+  "grezzi": 1072,
+  "qualificati": 8,
+  "pendenti": 8,
   "entrati": 6,
-  "win": 2,
+  "win": 4,
   "loss": 1,
   "be": 1
  },
- "posizioni_aperte": [
-  {
-   "moneta": "BTC",
-   "side": "short",
-   "entry": 64275.7,
-   "prezzo": 63949.4,
-   "pnl_perc": 0.51,
-   "fase": 0,
-   "ore": 18.3
-  },
-  {
-   "moneta": "SOL",
-   "side": "short",
-   "entry": 70.897,
-   "prezzo": 71.345,
-   "pnl_perc": -0.63,
-   "fase": 0,
-   "ore": 2.3
-  }
- ],
+ "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "18/06 16:21",
+   "data": "18/06 22:35",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": 0.618,
@@ -112,7 +93,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "18/06 16:21",
+   "data": "18/06 22:35",
    "moneta": "FET",
    "side": "short",
    "pnl_perc": 0.675,
@@ -120,7 +101,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "18/06 16:21",
+   "data": "18/06 22:35",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": -0.007,
@@ -128,12 +109,28 @@
    "motivo": "break_even"
   },
   {
-   "data": "18/06 16:21",
+   "data": "18/06 22:35",
    "moneta": "TRX",
    "side": "short",
    "pnl_perc": -1.479,
    "pnl_euro": -0.553,
    "motivo": "stop_loss"
+  },
+  {
+   "data": "18/06 22:35",
+   "moneta": "BTC",
+   "side": "short",
+   "pnl_perc": 2.749,
+   "pnl_euro": 0.906,
+   "motivo": "chiusura_massa"
+  },
+  {
+   "data": "18/06 22:35",
+   "moneta": "SOL",
+   "side": "short",
+   "pnl_perc": 3.162,
+   "pnl_euro": 1.049,
+   "motivo": "chiusura_massa"
   }
  ]
 }

@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.9",
-  "generato": "22/06/2026 01:39",
+  "generato": "22/06/2026 04:05",
   "saldo": 100.0,
   "budget": 100.0,
   "bot_attivo": true,
@@ -74,10 +74,10 @@
   }
  ],
  "funnel": {
-  "grezzi": 546,
-  "qualificati": 2,
-  "pendenti": 2,
-  "entrati": 1,
+  "grezzi": 0,
+  "qualificati": 0,
+  "pendenti": 0,
+  "entrati": 0,
   "win": 0,
   "loss": 0,
   "be": 0
@@ -87,10 +87,10 @@
    "moneta": "LINK",
    "side": "short",
    "entry": 7.811,
-   "prezzo": 7.777,
-   "pnl_perc": 0.44,
+   "prezzo": 7.939,
+   "pnl_perc": -1.64,
    "fase": 0,
-   "ore": 59.7
+   "ore": 62.1
   }
  ],
  "trade_recenti": []

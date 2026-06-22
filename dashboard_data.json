@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.9",
-  "generato": "22/06/2026 09:39",
-  "saldo": 100.0,
+  "generato": "22/06/2026 15:18",
+  "saldo": 98.85,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "SHORT"
@@ -64,34 +64,33 @@
   },
   {
    "w": "22/06",
-   "saldo": 100.0,
-   "pnl": 0,
-   "r": 0.0,
+   "saldo": 98.85,
+   "pnl": -1.15,
+   "r": -1.05,
    "win": 0,
-   "tot": 0,
+   "tot": 1,
    "note": "in corso",
    "live": true
   }
  ],
  "funnel": {
-  "grezzi": 34,
+  "grezzi": 136,
   "qualificati": 0,
   "pendenti": 0,
   "entrati": 0,
   "win": 0,
-  "loss": 0,
+  "loss": 1,
   "be": 0
  },
- "posizioni_aperte": [
+ "posizioni_aperte": [],
+ "trade_recenti": [
   {
+   "data": "22/06 15:18",
    "moneta": "LINK",
    "side": "short",
-   "entry": 7.811,
-   "prezzo": 7.974,
-   "pnl_perc": -2.09,
-   "fase": 0,
-   "ore": 67.7
+   "pnl_perc": -3.162,
+   "pnl_euro": -1.149,
+   "motivo": "stop_loss"
   }
- ],
- "trade_recenti": []
+ ]
 }

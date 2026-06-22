@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.9",
-  "generato": "22/06/2026 23:09",
+  "generato": "23/06/2026 00:50",
   "saldo": 98.85,
   "budget": 100.0,
   "bot_attivo": true,
@@ -63,7 +63,7 @@
    "note": ""
   },
   {
-   "w": "22/06",
+   "w": "23/06",
    "saldo": 98.85,
    "pnl": -1.15,
    "r": -1.05,
@@ -87,24 +87,24 @@
    "moneta": "ETH",
    "side": "short",
    "entry": 1733.81,
-   "prezzo": 1733.63,
-   "pnl_perc": 0.01,
+   "prezzo": 1722.29,
+   "pnl_perc": 0.66,
    "fase": 0,
-   "ore": 1.1
+   "ore": 2.8
   },
   {
    "moneta": "SOL",
    "side": "short",
    "entry": 72.663,
-   "prezzo": 72.768,
-   "pnl_perc": -0.14,
+   "prezzo": 71.876,
+   "pnl_perc": 1.08,
    "fase": 0,
-   "ore": 1.1
+   "ore": 2.8
   }
  ],
  "trade_recenti": [
   {
-   "data": "22/06 23:09",
+   "data": "23/06 00:50",
    "moneta": "LINK",
    "side": "short",
    "pnl_perc": -3.162,

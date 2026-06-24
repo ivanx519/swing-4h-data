@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "24/06/2026 14:28",
-  "saldo": 101.05,
+  "generato": "24/06/2026 17:23",
+  "saldo": 101.44,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "SHORT"
@@ -64,47 +64,28 @@
   },
   {
    "w": "24/06",
-   "saldo": 101.05,
-   "pnl": 1.05,
-   "r": 0.3,
-   "win": 3,
-   "tot": 4,
+   "saldo": 101.44,
+   "pnl": 1.44,
+   "r": 0.27,
+   "win": 5,
+   "tot": 6,
    "note": "in corso",
    "live": true
   }
  ],
  "funnel": {
-  "grezzi": 659,
-  "qualificati": 5,
-  "pendenti": 5,
+  "grezzi": 709,
+  "qualificati": 6,
+  "pendenti": 6,
   "entrati": 5,
-  "win": 3,
+  "win": 5,
   "loss": 1,
   "be": 0
  },
- "posizioni_aperte": [
-  {
-   "moneta": "BTC",
-   "side": "short",
-   "entry": 62482.8,
-   "prezzo": 62741.0,
-   "pnl_perc": -0.41,
-   "fase": 0,
-   "ore": 23.3
-  },
-  {
-   "moneta": "ETH",
-   "side": "short",
-   "entry": 1659.83,
-   "prezzo": 1675.06,
-   "pnl_perc": -0.92,
-   "fase": 0,
-   "ore": 21.3
-  }
- ],
+ "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "24/06 14:28",
+   "data": "24/06 17:23",
    "moneta": "LINK",
    "side": "short",
    "pnl_perc": -3.162,
@@ -112,7 +93,7 @@
    "motivo": "stop_loss"
   },
   {
-   "data": "24/06 14:28",
+   "data": "24/06 17:23",
    "moneta": "SOL",
    "side": "short",
    "pnl_perc": 0.884,
@@ -120,7 +101,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "24/06 14:28",
+   "data": "24/06 17:23",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": 1.001,
@@ -128,12 +109,28 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "24/06 14:28",
+   "data": "24/06 17:23",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": 4.839,
    "pnl_euro": 1.633,
    "motivo": "chiusura_manuale"
+  },
+  {
+   "data": "24/06 17:23",
+   "moneta": "BTC",
+   "side": "short",
+   "pnl_perc": 0.615,
+   "pnl_euro": 0.175,
+   "motivo": "ratchet_profit"
+  },
+  {
+   "data": "24/06 17:23",
+   "moneta": "ETH",
+   "side": "short",
+   "pnl_perc": 0.721,
+   "pnl_euro": 0.212,
+   "motivo": "ratchet_profit"
   }
  ]
 }

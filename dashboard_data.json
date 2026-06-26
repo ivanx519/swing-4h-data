@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "26/06/2026 01:42",
+  "generato": "26/06/2026 03:48",
   "saldo": 101.39,
   "budget": 100.0,
   "bot_attivo": true,
@@ -87,15 +87,15 @@
    "moneta": "TRX",
    "side": "short",
    "entry": 0.32318,
-   "prezzo": 0.32371,
-   "pnl_perc": -0.16,
+   "prezzo": 0.32304,
+   "pnl_perc": 0.04,
    "fase": 0,
-   "ore": 7.7
+   "ore": 9.8
   }
  ],
  "trade_recenti": [
   {
-   "data": "26/06 01:42",
+   "data": "26/06 03:48",
    "moneta": "LINK",
    "side": "short",
    "pnl_perc": -3.162,
@@ -103,7 +103,7 @@
    "motivo": "stop_loss"
   },
   {
-   "data": "26/06 01:42",
+   "data": "26/06 03:48",
    "moneta": "SOL",
    "side": "short",
    "pnl_perc": 0.884,
@@ -111,7 +111,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "26/06 01:42",
+   "data": "26/06 03:48",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": 1.001,
@@ -119,7 +119,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "26/06 01:42",
+   "data": "26/06 03:48",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": 4.839,
@@ -127,7 +127,7 @@
    "motivo": "chiusura_manuale"
   },
   {
-   "data": "26/06 01:42",
+   "data": "26/06 03:48",
    "moneta": "BTC",
    "side": "short",
    "pnl_perc": 0.615,
@@ -135,7 +135,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "26/06 01:42",
+   "data": "26/06 03:48",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": 0.721,
@@ -143,7 +143,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "26/06 01:42",
+   "data": "26/06 03:48",
    "moneta": "HBAR",
    "side": "short",
    "pnl_perc": -0.014,

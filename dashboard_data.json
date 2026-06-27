@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "28/06/2026 00:43",
-  "saldo": 101.67,
+  "generato": "28/06/2026 01:38",
+  "saldo": 101.54,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "SHORT"
@@ -64,11 +64,11 @@
   },
   {
    "w": "28/06",
-   "saldo": 101.67,
-   "pnl": 1.67,
-   "r": 0.25,
+   "saldo": 101.54,
+   "pnl": 1.54,
+   "r": 0.22,
    "win": 6,
-   "tot": 8,
+   "tot": 9,
    "note": "in corso",
    "live": true
   }
@@ -79,7 +79,7 @@
   "pendenti": 11,
   "entrati": 9,
   "win": 6,
-  "loss": 1,
+  "loss": 2,
   "be": 1
  },
  "posizioni_aperte": [
@@ -87,24 +87,15 @@
    "moneta": "DOGE",
    "side": "short",
    "entry": 0.07472,
-   "prezzo": 0.07463,
-   "pnl_perc": 0.12,
+   "prezzo": 0.07449,
+   "pnl_perc": 0.31,
    "fase": 0,
-   "ore": 2.7
-  },
-  {
-   "moneta": "SUI",
-   "side": "short",
-   "entry": 0.6854,
-   "prezzo": 0.6842,
-   "pnl_perc": 0.18,
-   "fase": 0,
-   "ore": 2.7
+   "ore": 3.6
   }
  ],
  "trade_recenti": [
   {
-   "data": "28/06 00:43",
+   "data": "28/06 01:38",
    "moneta": "LINK",
    "side": "short",
    "pnl_perc": -3.162,
@@ -112,7 +103,7 @@
    "motivo": "stop_loss"
   },
   {
-   "data": "28/06 00:43",
+   "data": "28/06 01:38",
    "moneta": "SOL",
    "side": "short",
    "pnl_perc": 0.884,
@@ -120,7 +111,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "28/06 00:43",
+   "data": "28/06 01:38",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": 1.001,
@@ -128,7 +119,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "28/06 00:43",
+   "data": "28/06 01:38",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": 4.839,
@@ -136,7 +127,7 @@
    "motivo": "chiusura_manuale"
   },
   {
-   "data": "28/06 00:43",
+   "data": "28/06 01:38",
    "moneta": "BTC",
    "side": "short",
    "pnl_perc": 0.615,
@@ -144,7 +135,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "28/06 00:43",
+   "data": "28/06 01:38",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": 0.721,
@@ -152,7 +143,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "28/06 00:43",
+   "data": "28/06 01:38",
    "moneta": "HBAR",
    "side": "short",
    "pnl_perc": -0.014,
@@ -160,12 +151,20 @@
    "motivo": "break_even"
   },
   {
-   "data": "28/06 00:43",
+   "data": "28/06 01:38",
    "moneta": "TRX",
    "side": "short",
    "pnl_perc": 0.888,
    "pnl_euro": 0.273,
    "motivo": "ratchet_profit"
+  },
+  {
+   "data": "28/06 01:38",
+   "moneta": "SUI",
+   "side": "short",
+   "pnl_perc": -0.233,
+   "pnl_euro": -0.126,
+   "motivo": "stop_loss"
   }
  ]
 }

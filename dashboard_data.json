@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "27/06/2026 23:42",
+  "generato": "28/06/2026 00:43",
   "saldo": 101.67,
   "budget": 100.0,
   "bot_attivo": true,
@@ -63,7 +63,7 @@
    "note": ""
   },
   {
-   "w": "27/06",
+   "w": "28/06",
    "saldo": 101.67,
    "pnl": 1.67,
    "r": 0.25,
@@ -87,24 +87,24 @@
    "moneta": "DOGE",
    "side": "short",
    "entry": 0.07472,
-   "prezzo": 0.0746,
-   "pnl_perc": 0.16,
+   "prezzo": 0.07463,
+   "pnl_perc": 0.12,
    "fase": 0,
-   "ore": 1.7
+   "ore": 2.7
   },
   {
    "moneta": "SUI",
    "side": "short",
    "entry": 0.6854,
-   "prezzo": 0.6817,
-   "pnl_perc": 0.54,
+   "prezzo": 0.6842,
+   "pnl_perc": 0.18,
    "fase": 0,
-   "ore": 1.7
+   "ore": 2.7
   }
  ],
  "trade_recenti": [
   {
-   "data": "27/06 23:42",
+   "data": "28/06 00:43",
    "moneta": "LINK",
    "side": "short",
    "pnl_perc": -3.162,
@@ -112,7 +112,7 @@
    "motivo": "stop_loss"
   },
   {
-   "data": "27/06 23:42",
+   "data": "28/06 00:43",
    "moneta": "SOL",
    "side": "short",
    "pnl_perc": 0.884,
@@ -120,7 +120,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "27/06 23:42",
+   "data": "28/06 00:43",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": 1.001,
@@ -128,7 +128,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "27/06 23:42",
+   "data": "28/06 00:43",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": 4.839,
@@ -136,7 +136,7 @@
    "motivo": "chiusura_manuale"
   },
   {
-   "data": "27/06 23:42",
+   "data": "28/06 00:43",
    "moneta": "BTC",
    "side": "short",
    "pnl_perc": 0.615,
@@ -144,7 +144,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "27/06 23:42",
+   "data": "28/06 00:43",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": 0.721,
@@ -152,7 +152,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "27/06 23:42",
+   "data": "28/06 00:43",
    "moneta": "HBAR",
    "side": "short",
    "pnl_perc": -0.014,
@@ -160,7 +160,7 @@
    "motivo": "break_even"
   },
   {
-   "data": "27/06 23:42",
+   "data": "28/06 00:43",
    "moneta": "TRX",
    "side": "short",
    "pnl_perc": 0.888,

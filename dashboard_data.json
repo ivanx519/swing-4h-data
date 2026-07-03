@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "03/07/2026 19:03",
+  "generato": "03/07/2026 20:34",
   "saldo": 100.66,
   "budget": 100.0,
   "bot_attivo": true,
@@ -83,7 +83,7 @@
   }
  ],
  "funnel": {
-  "grezzi": 1199,
+  "grezzi": 1214,
   "qualificati": 7,
   "pendenti": 7,
   "entrati": 1,
@@ -94,7 +94,7 @@
  "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "03/07 19:03",
+   "data": "03/07 20:34",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": -3.0,

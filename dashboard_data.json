@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "06/07/2026 00:34",
+  "generato": "06/07/2026 01:39",
   "saldo": 100.66,
   "budget": 100.0,
   "bot_attivo": true,
@@ -94,7 +94,7 @@
  "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "06/07 00:34",
+   "data": "06/07 01:39",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": -3.0,

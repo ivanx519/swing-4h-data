@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "06/07/2026 16:33",
+  "generato": "06/07/2026 19:25",
   "saldo": 100.92,
   "budget": 100.0,
   "bot_attivo": true,
@@ -92,7 +92,7 @@
   }
  ],
  "funnel": {
-  "grezzi": 153,
+  "grezzi": 198,
   "qualificati": 3,
   "pendenti": 3,
   "entrati": 1,
@@ -103,7 +103,7 @@
  "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "06/07 16:33",
+   "data": "06/07 19:25",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": 0.871,

@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "06/07/2026 01:39",
+  "generato": "06/07/2026 03:20",
   "saldo": 100.66,
   "budget": 100.0,
   "bot_attivo": true,
@@ -78,28 +78,28 @@
    "r": -1.0,
    "win": 0,
    "tot": 1,
+   "note": ""
+  },
+  {
+   "w": "06/07",
+   "saldo": 100.66,
+   "pnl": 0,
+   "r": 0.0,
+   "win": 0,
+   "tot": 0,
    "note": "in corso",
    "live": true
   }
  ],
  "funnel": {
-  "grezzi": 1499,
-  "qualificati": 7,
-  "pendenti": 7,
-  "entrati": 1,
+  "grezzi": 0,
+  "qualificati": 0,
+  "pendenti": 0,
+  "entrati": 0,
   "win": 0,
-  "loss": 1,
+  "loss": 0,
   "be": 0
  },
  "posizioni_aperte": [],
- "trade_recenti": [
-  {
-   "data": "06/07 01:39",
-   "moneta": "ETH",
-   "side": "short",
-   "pnl_perc": -3.0,
-   "pnl_euro": -1.111,
-   "motivo": "stop_loss"
-  }
- ]
+ "trade_recenti": []
 }

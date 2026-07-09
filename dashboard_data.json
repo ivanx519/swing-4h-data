@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "09/07/2026 22:54",
+  "generato": "10/07/2026 00:40",
   "saldo": 101.1,
   "budget": 100.0,
   "bot_attivo": true,
@@ -81,7 +81,7 @@
    "note": ""
   },
   {
-   "w": "09/07",
+   "w": "10/07",
    "saldo": 101.1,
    "pnl": 0.44,
    "r": 0.18,
@@ -105,15 +105,15 @@
    "moneta": "BTC",
    "side": "short",
    "entry": 61677.1,
-   "prezzo": 63206.4,
-   "pnl_perc": -2.48,
+   "prezzo": 63272.1,
+   "pnl_perc": -2.59,
    "fase": 0,
-   "ore": 28.2
+   "ore": 30.0
   }
  ],
  "trade_recenti": [
   {
-   "data": "09/07 22:54",
+   "data": "10/07 00:40",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": 0.871,
@@ -121,7 +121,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "09/07 22:54",
+   "data": "10/07 00:40",
    "moneta": "BTC",
    "side": "short",
    "pnl_perc": 0.745,
@@ -129,7 +129,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "09/07 22:54",
+   "data": "10/07 00:40",
    "moneta": "AVAX",
    "side": "short",
    "pnl_perc": -0.016,

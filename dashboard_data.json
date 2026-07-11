@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "11/07/2026 20:07",
+  "generato": "11/07/2026 21:28",
   "saldo": 99.77,
   "budget": 100.0,
   "bot_attivo": true,
@@ -92,7 +92,7 @@
   }
  ],
  "funnel": {
-  "grezzi": 1216,
+  "grezzi": 1231,
   "qualificati": 10,
   "pendenti": 10,
   "entrati": 4,
@@ -103,7 +103,7 @@
  "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "11/07 20:07",
+   "data": "11/07 21:28",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": 0.871,
@@ -111,7 +111,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "11/07 20:07",
+   "data": "11/07 21:28",
    "moneta": "BTC",
    "side": "short",
    "pnl_perc": 0.745,
@@ -119,7 +119,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "11/07 20:07",
+   "data": "11/07 21:28",
    "moneta": "AVAX",
    "side": "short",
    "pnl_perc": -0.016,
@@ -127,7 +127,7 @@
    "motivo": "break_even"
   },
   {
-   "data": "11/07 20:07",
+   "data": "11/07 21:28",
    "moneta": "BTC",
    "side": "short",
    "pnl_perc": -3.444,
@@ -135,7 +135,7 @@
    "motivo": "stop_loss"
   },
   {
-   "data": "11/07 20:07",
+   "data": "11/07 21:28",
    "moneta": "ETH",
    "side": "short",
    "pnl_perc": -0.006,

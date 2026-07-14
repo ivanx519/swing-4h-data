@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "14/07/2026 16:09",
-  "saldo": 99.77,
+  "generato": "14/07/2026 17:41",
+  "saldo": 98.6,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "SHORT"
@@ -91,34 +91,33 @@
   },
   {
    "w": "14/07",
-   "saldo": 99.77,
-   "pnl": 0,
-   "r": 0.0,
+   "saldo": 98.6,
+   "pnl": -1.17,
+   "r": -1.07,
    "win": 0,
-   "tot": 0,
+   "tot": 1,
    "note": "in corso",
    "live": true
   }
  ],
  "funnel": {
-  "grezzi": 287,
-  "qualificati": 2,
-  "pendenti": 2,
+  "grezzi": 302,
+  "qualificati": 3,
+  "pendenti": 3,
   "entrati": 1,
   "win": 0,
-  "loss": 0,
+  "loss": 1,
   "be": 0
  },
- "posizioni_aperte": [
+ "posizioni_aperte": [],
+ "trade_recenti": [
   {
+   "data": "14/07 17:41",
    "moneta": "BTC",
    "side": "short",
-   "entry": 62268.1,
-   "prezzo": 63697.8,
-   "pnl_perc": -2.3,
-   "fase": 0,
-   "ore": 18.1
+   "pnl_perc": -3.222,
+   "pnl_euro": -1.167,
+   "motivo": "stop_loss"
   }
- ],
- "trade_recenti": []
+ ]
 }

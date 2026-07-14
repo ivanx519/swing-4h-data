@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "14/07/2026 12:24",
+  "generato": "14/07/2026 14:01",
   "saldo": 99.77,
   "budget": 100.0,
   "bot_attivo": true,
@@ -101,7 +101,7 @@
   }
  ],
  "funnel": {
-  "grezzi": 227,
+  "grezzi": 257,
   "qualificati": 2,
   "pendenti": 2,
   "entrati": 1,
@@ -114,10 +114,10 @@
    "moneta": "BTC",
    "side": "short",
    "entry": 62268.1,
-   "prezzo": 62655.3,
-   "pnl_perc": -0.62,
+   "prezzo": 62801.1,
+   "pnl_perc": -0.86,
    "fase": 0,
-   "ore": 14.4
+   "ore": 16.0
   }
  ],
  "trade_recenti": []

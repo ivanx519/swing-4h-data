@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "17/07/2026 02:10",
+  "generato": "17/07/2026 05:35",
   "saldo": 98.6,
   "budget": 100.0,
   "bot_attivo": true,
@@ -112,7 +112,7 @@
  "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "17/07 02:10",
+   "data": "17/07 05:35",
    "moneta": "BTC",
    "side": "short",
    "pnl_perc": -3.222,

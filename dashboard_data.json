@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "18/07/2026 14:33",
+  "generato": "18/07/2026 16:05",
   "saldo": 98.6,
   "budget": 100.0,
   "bot_attivo": true,
@@ -101,7 +101,7 @@
   }
  ],
  "funnel": {
-  "grezzi": 1249,
+  "grezzi": 1279,
   "qualificati": 6,
   "pendenti": 6,
   "entrati": 3,
@@ -117,21 +117,21 @@
    "prezzo": 0.07203,
    "pnl_perc": -0.56,
    "fase": 0,
-   "ore": 28.6
+   "ore": 30.1
   },
   {
    "moneta": "DOT",
    "side": "short",
    "entry": 0.842,
-   "prezzo": 0.835,
-   "pnl_perc": 0.83,
+   "prezzo": 0.83,
+   "pnl_perc": 1.43,
    "fase": 0,
-   "ore": 0.6
+   "ore": 2.1
   }
  ],
  "trade_recenti": [
   {
-   "data": "18/07 14:33",
+   "data": "18/07 16:05",
    "moneta": "BTC",
    "side": "short",
    "pnl_perc": -3.222,

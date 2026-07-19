@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "19/07/2026 03:07",
+  "generato": "19/07/2026 06:30",
   "saldo": 98.85,
   "budget": 100.0,
   "bot_attivo": true,
@@ -114,24 +114,24 @@
    "moneta": "DOGE",
    "side": "short",
    "entry": 0.07163,
-   "prezzo": 0.07244,
-   "pnl_perc": -1.13,
+   "prezzo": 0.0723,
+   "pnl_perc": -0.94,
    "fase": 0,
-   "ore": 41.1
+   "ore": 44.5
   },
   {
    "moneta": "DOT",
    "side": "short",
    "entry": 0.832,
-   "prezzo": 0.832,
-   "pnl_perc": 0.0,
+   "prezzo": 0.836,
+   "pnl_perc": -0.48,
    "fase": 0,
-   "ore": 6.2
+   "ore": 9.5
   }
  ],
  "trade_recenti": [
   {
-   "data": "19/07 03:07",
+   "data": "19/07 06:30",
    "moneta": "BTC",
    "side": "short",
    "pnl_perc": -3.222,
@@ -139,7 +139,7 @@
    "motivo": "stop_loss"
   },
   {
-   "data": "19/07 03:07",
+   "data": "19/07 06:30",
    "moneta": "DOT",
    "side": "short",
    "pnl_perc": 0.831,

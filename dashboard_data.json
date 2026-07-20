@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "20/07/2026 21:01",
+  "generato": "20/07/2026 22:37",
   "saldo": 98.98,
   "budget": 100.0,
   "bot_attivo": true,
@@ -110,7 +110,7 @@
   }
  ],
  "funnel": {
-  "grezzi": 211,
+  "grezzi": 226,
   "qualificati": 1,
   "pendenti": 1,
   "entrati": 1,
@@ -123,19 +123,19 @@
    "moneta": "DOGE",
    "side": "short",
    "entry": 0.07163,
-   "prezzo": 0.07241,
-   "pnl_perc": -1.09,
+   "prezzo": 0.07229,
+   "pnl_perc": -0.92,
    "fase": 0,
-   "ore": 83.0
+   "ore": 84.6
   },
   {
    "moneta": "HBAR",
    "side": "short",
    "entry": 0.06568,
-   "prezzo": 0.06656,
-   "pnl_perc": -1.34,
+   "prezzo": 0.06626,
+   "pnl_perc": -0.88,
    "fase": 0,
-   "ore": 9.5
+   "ore": 11.2
   }
  ],
  "trade_recenti": []

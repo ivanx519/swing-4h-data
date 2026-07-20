@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "20/07/2026 01:36",
+  "generato": "20/07/2026 03:12",
   "saldo": 98.98,
   "budget": 100.0,
   "bot_attivo": true,
@@ -96,17 +96,26 @@
    "r": -0.21,
    "win": 2,
    "tot": 3,
+   "note": ""
+  },
+  {
+   "w": "20/07",
+   "saldo": 98.98,
+   "pnl": 0,
+   "r": 0.0,
+   "win": 0,
+   "tot": 0,
    "note": "in corso",
    "live": true
   }
  ],
  "funnel": {
-  "grezzi": 1370,
-  "qualificati": 7,
-  "pendenti": 7,
-  "entrati": 4,
-  "win": 2,
-  "loss": 1,
+  "grezzi": 0,
+  "qualificati": 0,
+  "pendenti": 0,
+  "entrati": 0,
+  "win": 0,
+  "loss": 0,
   "be": 0
  },
  "posizioni_aperte": [
@@ -114,36 +123,11 @@
    "moneta": "DOGE",
    "side": "short",
    "entry": 0.07163,
-   "prezzo": 0.0723,
-   "pnl_perc": -0.94,
+   "prezzo": 0.07281,
+   "pnl_perc": -1.65,
    "fase": 0,
-   "ore": 63.6
+   "ore": 65.2
   }
  ],
- "trade_recenti": [
-  {
-   "data": "20/07 01:36",
-   "moneta": "BTC",
-   "side": "short",
-   "pnl_perc": -3.222,
-   "pnl_euro": -1.167,
-   "motivo": "stop_loss"
-  },
-  {
-   "data": "20/07 01:36",
-   "moneta": "DOT",
-   "side": "short",
-   "pnl_perc": 0.831,
-   "pnl_euro": 0.246,
-   "motivo": "ratchet_profit"
-  },
-  {
-   "data": "20/07 01:36",
-   "moneta": "DOT",
-   "side": "short",
-   "pnl_perc": 0.481,
-   "pnl_euro": 0.125,
-   "motivo": "ratchet_profit"
-  }
- ]
+ "trade_recenti": []
 }

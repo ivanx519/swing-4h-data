@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "21/07/2026 08:13",
-  "saldo": 98.98,
+  "generato": "21/07/2026 10:46",
+  "saldo": 97.22,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "STABILE"
@@ -100,43 +100,41 @@
   },
   {
    "w": "21/07",
-   "saldo": 98.98,
-   "pnl": 0,
-   "r": 0.0,
+   "saldo": 97.22,
+   "pnl": -1.75,
+   "r": -0.9,
    "win": 0,
-   "tot": 0,
+   "tot": 2,
    "note": "in corso",
    "live": true
   }
  ],
  "funnel": {
-  "grezzi": 270,
+  "grezzi": 296,
   "qualificati": 3,
   "pendenti": 3,
   "entrati": 1,
   "win": 0,
-  "loss": 0,
+  "loss": 2,
   "be": 0
  },
- "posizioni_aperte": [
+ "posizioni_aperte": [],
+ "trade_recenti": [
   {
-   "moneta": "DOGE",
-   "side": "short",
-   "entry": 0.07163,
-   "prezzo": 0.07292,
-   "pnl_perc": -1.8,
-   "fase": 0,
-   "ore": 94.2
-  },
-  {
+   "data": "21/07 10:46",
    "moneta": "HBAR",
    "side": "short",
-   "entry": 0.06568,
-   "prezzo": 0.06713,
-   "pnl_perc": -2.21,
-   "fase": 0,
-   "ore": 20.7
+   "pnl_perc": -2.467,
+   "pnl_euro": -0.896,
+   "motivo": "stop_loss"
+  },
+  {
+   "data": "21/07 10:46",
+   "moneta": "DOGE",
+   "side": "short",
+   "pnl_perc": -2.359,
+   "pnl_euro": -0.856,
+   "motivo": "timeout"
   }
- ],
- "trade_recenti": []
+ ]
 }

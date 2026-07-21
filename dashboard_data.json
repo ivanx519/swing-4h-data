@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "21/07/2026 18:57",
-  "saldo": 97.22,
+  "generato": "21/07/2026 20:39",
+  "saldo": 97.17,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "STABILE"
@@ -100,38 +100,28 @@
   },
   {
    "w": "21/07",
-   "saldo": 97.22,
-   "pnl": -1.75,
-   "r": -0.9,
+   "saldo": 97.17,
+   "pnl": -1.81,
+   "r": -0.61,
    "win": 0,
-   "tot": 2,
+   "tot": 3,
    "note": "in corso",
    "live": true
   }
  ],
  "funnel": {
-  "grezzi": 413,
+  "grezzi": 426,
   "qualificati": 3,
   "pendenti": 3,
   "entrati": 2,
   "win": 0,
   "loss": 2,
-  "be": 0
+  "be": 1
  },
- "posizioni_aperte": [
-  {
-   "moneta": "BTC",
-   "side": "long",
-   "entry": 66154.2,
-   "prezzo": 66558.1,
-   "pnl_perc": 0.61,
-   "fase": 0,
-   "ore": 8.2
-  }
- ],
+ "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "21/07 18:57",
+   "data": "21/07 20:39",
    "moneta": "HBAR",
    "side": "short",
    "pnl_perc": -2.467,
@@ -139,12 +129,20 @@
    "motivo": "stop_loss"
   },
   {
-   "data": "21/07 18:57",
+   "data": "21/07 20:39",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": -2.359,
    "pnl_euro": -0.856,
    "motivo": "timeout"
+  },
+  {
+   "data": "21/07 20:39",
+   "moneta": "BTC",
+   "side": "long",
+   "pnl_perc": -0.05,
+   "pnl_euro": -0.058,
+   "motivo": "break_even"
   }
  ]
 }

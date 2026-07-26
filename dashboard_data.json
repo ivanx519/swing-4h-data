@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "26/07/2026 08:47",
+  "generato": "26/07/2026 11:18",
   "saldo": 97.17,
   "budget": 100.0,
   "bot_attivo": true,
@@ -123,15 +123,15 @@
    "moneta": "TRX",
    "side": "long",
    "entry": 0.33124,
-   "prezzo": 0.33116,
-   "pnl_perc": -0.02,
+   "prezzo": 0.33103,
+   "pnl_perc": -0.06,
    "fase": 0,
-   "ore": 46.8
+   "ore": 49.3
   }
  ],
  "trade_recenti": [
   {
-   "data": "26/07 08:47",
+   "data": "26/07 11:18",
    "moneta": "HBAR",
    "side": "short",
    "pnl_perc": -2.467,
@@ -139,7 +139,7 @@
    "motivo": "stop_loss"
   },
   {
-   "data": "26/07 08:47",
+   "data": "26/07 11:18",
    "moneta": "DOGE",
    "side": "short",
    "pnl_perc": -2.359,
@@ -147,7 +147,7 @@
    "motivo": "timeout"
   },
   {
-   "data": "26/07 08:47",
+   "data": "26/07 11:18",
    "moneta": "BTC",
    "side": "long",
    "pnl_perc": -0.05,

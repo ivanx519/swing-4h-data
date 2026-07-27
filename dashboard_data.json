@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "28/07/2026 00:38",
-  "saldo": 97.17,
+  "generato": "28/07/2026 01:44",
+  "saldo": 96.53,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "STABILE"
@@ -109,11 +109,11 @@
   },
   {
    "w": "28/07",
-   "saldo": 97.17,
-   "pnl": 0,
-   "r": 0.0,
+   "saldo": 96.53,
+   "pnl": -0.64,
+   "r": -1.08,
    "win": 0,
-   "tot": 0,
+   "tot": 1,
    "note": "in corso",
    "live": true
   }
@@ -124,19 +124,18 @@
   "pendenti": 0,
   "entrati": 0,
   "win": 0,
-  "loss": 0,
+  "loss": 1,
   "be": 0
  },
- "posizioni_aperte": [
+ "posizioni_aperte": [],
+ "trade_recenti": [
   {
+   "data": "28/07 01:44",
    "moneta": "TRX",
    "side": "long",
-   "entry": 0.33124,
-   "prezzo": 0.32692,
-   "pnl_perc": -1.3,
-   "fase": 0,
-   "ore": 86.6
+   "pnl_perc": -1.748,
+   "pnl_euro": -0.635,
+   "motivo": "stop_loss"
   }
- ],
- "trade_recenti": []
+ ]
 }

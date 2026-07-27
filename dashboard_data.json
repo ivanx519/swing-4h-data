@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "27/07/2026 02:08",
+  "generato": "27/07/2026 06:00",
   "saldo": 97.17,
   "budget": 100.0,
   "bot_attivo": true,
@@ -132,10 +132,10 @@
    "moneta": "TRX",
    "side": "long",
    "entry": 0.33124,
-   "prezzo": 0.33211,
-   "pnl_perc": 0.26,
+   "prezzo": 0.3314,
+   "pnl_perc": 0.05,
    "fase": 0,
-   "ore": 64.1
+   "ore": 68.0
   }
  ],
  "trade_recenti": []

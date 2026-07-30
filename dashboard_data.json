@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "30/07/2026 19:48",
+  "generato": "30/07/2026 21:50",
   "saldo": 96.53,
   "budget": 100.0,
   "bot_attivo": true,
@@ -119,7 +119,7 @@
   }
  ],
  "funnel": {
-  "grezzi": 862,
+  "grezzi": 892,
   "qualificati": 2,
   "pendenti": 2,
   "entrati": 0,
@@ -130,7 +130,7 @@
  "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "30/07 19:48",
+   "data": "30/07 21:50",
    "moneta": "TRX",
    "side": "long",
    "pnl_perc": -1.748,

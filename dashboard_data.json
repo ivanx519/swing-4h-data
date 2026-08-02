@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "02/08/2026 23:07",
+  "generato": "03/08/2026 00:07",
   "saldo": 96.53,
   "budget": 100.0,
   "bot_attivo": true,
@@ -108,7 +108,7 @@
    "note": ""
   },
   {
-   "w": "02/08",
+   "w": "03/08",
    "saldo": 96.53,
    "pnl": -0.64,
    "r": -1.08,
@@ -130,7 +130,7 @@
  "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "02/08 23:07",
+   "data": "03/08 00:07",
    "moneta": "TRX",
    "side": "long",
    "pnl_perc": -1.748,

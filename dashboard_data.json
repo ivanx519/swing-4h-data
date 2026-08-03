@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "03/08/2026 15:44",
+  "generato": "03/08/2026 18:35",
   "saldo": 96.53,
   "budget": 100.0,
   "bot_attivo": true,
@@ -128,14 +128,24 @@
   }
  ],
  "funnel": {
-  "grezzi": 152,
-  "qualificati": 1,
-  "pendenti": 1,
-  "entrati": 0,
+  "grezzi": 200,
+  "qualificati": 2,
+  "pendenti": 2,
+  "entrati": 1,
   "win": 0,
   "loss": 0,
   "be": 0
  },
- "posizioni_aperte": [],
+ "posizioni_aperte": [
+  {
+   "moneta": "ZEC",
+   "side": "long",
+   "entry": 488.25,
+   "prezzo": 490.57,
+   "pnl_perc": 0.48,
+   "fase": 0,
+   "ore": 0.2
+  }
+ ],
  "trade_recenti": []
 }

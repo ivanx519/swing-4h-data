@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "03/08/2026 23:47",
+  "generato": "04/08/2026 01:13",
   "saldo": 96.53,
   "budget": 100.0,
   "bot_attivo": true,
@@ -117,7 +117,7 @@
    "note": ""
   },
   {
-   "w": "03/08",
+   "w": "04/08",
    "saldo": 96.53,
    "pnl": 0,
    "r": 0.0,
@@ -141,10 +141,10 @@
    "moneta": "ZEC",
    "side": "long",
    "entry": 488.25,
-   "prezzo": 483.76,
-   "pnl_perc": -0.92,
+   "prezzo": 479.74,
+   "pnl_perc": -1.74,
    "fase": 0,
-   "ore": 5.4
+   "ore": 6.8
   }
  ],
  "trade_recenti": []

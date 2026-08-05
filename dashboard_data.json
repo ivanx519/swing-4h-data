@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "05/08/2026 22:34",
-  "saldo": 96.95,
+  "generato": "05/08/2026 23:50",
+  "saldo": 97.59,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "STABILE"
@@ -118,11 +118,11 @@
   },
   {
    "w": "05/08",
-   "saldo": 96.95,
-   "pnl": 0.42,
-   "r": 0.45,
-   "win": 1,
-   "tot": 1,
+   "saldo": 97.59,
+   "pnl": 1.06,
+   "r": 0.57,
+   "win": 2,
+   "tot": 2,
    "note": "in corso",
    "live": true
   }
@@ -131,30 +131,38 @@
   "grezzi": 773,
   "qualificati": 3,
   "pendenti": 3,
-  "entrati": 2,
-  "win": 1,
+  "entrati": 3,
+  "win": 2,
   "loss": 0,
   "be": 0
  },
  "posizioni_aperte": [
   {
-   "moneta": "ETH",
+   "moneta": "BTC",
    "side": "long",
-   "entry": 1871.85,
-   "prezzo": 1918.23,
-   "pnl_perc": 2.48,
-   "fase": 2,
-   "ore": 32.6
+   "entry": 64794.8,
+   "prezzo": 64691.7,
+   "pnl_perc": -0.16,
+   "fase": 0,
+   "ore": 0.8
   }
  ],
  "trade_recenti": [
   {
-   "data": "05/08 22:34",
+   "data": "05/08 23:50",
    "moneta": "ZEC",
    "side": "long",
    "pnl_perc": 1.356,
    "pnl_euro": 0.418,
    "motivo": "ratchet_profit"
+  },
+  {
+   "data": "05/08 23:50",
+   "moneta": "ETH",
+   "side": "long",
+   "pnl_perc": 2.027,
+   "pnl_euro": 0.644,
+   "motivo": "trailing_f2"
   }
  ]
 }

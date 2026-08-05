@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "05/08/2026 01:17",
+  "generato": "05/08/2026 03:03",
   "saldo": 96.95,
   "budget": 100.0,
   "bot_attivo": true,
@@ -141,15 +141,15 @@
    "moneta": "ETH",
    "side": "long",
    "entry": 1871.85,
-   "prezzo": 1880.26,
-   "pnl_perc": 0.45,
+   "prezzo": 1861.66,
+   "pnl_perc": -0.54,
    "fase": 0,
-   "ore": 11.3
+   "ore": 13.0
   }
  ],
  "trade_recenti": [
   {
-   "data": "05/08 01:17",
+   "data": "05/08 03:03",
    "moneta": "ZEC",
    "side": "long",
    "pnl_perc": 1.356,

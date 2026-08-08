@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "08/08/2026 16:45",
+  "generato": "08/08/2026 17:41",
   "saldo": 97.59,
   "budget": 100.0,
   "bot_attivo": true,
@@ -128,7 +128,7 @@
   }
  ],
  "funnel": {
-  "grezzi": 1458,
+  "grezzi": 1473,
   "qualificati": 5,
   "pendenti": 5,
   "entrati": 3,
@@ -141,15 +141,15 @@
    "moneta": "BTC",
    "side": "long",
    "entry": 64794.8,
-   "prezzo": 65087.3,
-   "pnl_perc": 0.45,
+   "prezzo": 65035.7,
+   "pnl_perc": 0.37,
    "fase": 0,
-   "ore": 65.8
+   "ore": 66.7
   }
  ],
  "trade_recenti": [
   {
-   "data": "08/08 16:45",
+   "data": "08/08 17:41",
    "moneta": "ZEC",
    "side": "long",
    "pnl_perc": 1.356,
@@ -157,7 +157,7 @@
    "motivo": "ratchet_profit"
   },
   {
-   "data": "08/08 16:45",
+   "data": "08/08 17:41",
    "moneta": "ETH",
    "side": "long",
    "pnl_perc": 2.027,

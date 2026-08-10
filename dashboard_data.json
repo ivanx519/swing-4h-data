@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "10/08/2026 08:39",
+  "generato": "10/08/2026 10:15",
   "saldo": 97.72,
   "budget": 100.0,
   "bot_attivo": true,
@@ -137,9 +137,9 @@
   }
  ],
  "funnel": {
-  "grezzi": 17,
-  "qualificati": 0,
-  "pendenti": 0,
+  "grezzi": 50,
+  "qualificati": 1,
+  "pendenti": 1,
   "entrati": 0,
   "win": 0,
   "loss": 0,

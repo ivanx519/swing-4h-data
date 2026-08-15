@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "15/08/2026 07:01",
+  "generato": "15/08/2026 07:36",
   "saldo": 98.38,
   "budget": 100.0,
   "bot_attivo": true,
@@ -137,7 +137,7 @@
   }
  ],
  "funnel": {
-  "grezzi": 1282,
+  "grezzi": 1298,
   "qualificati": 6,
   "pendenti": 6,
   "entrati": 1,
@@ -148,7 +148,7 @@
  "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "15/08 07:01",
+   "data": "15/08 07:36",
    "moneta": "LINK",
    "side": "long",
    "pnl_perc": 2.06,

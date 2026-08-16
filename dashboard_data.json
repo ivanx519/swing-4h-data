@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "16/08/2026 23:51",
+  "generato": "17/08/2026 00:31",
   "saldo": 99.72,
   "budget": 100.0,
   "bot_attivo": true,
@@ -126,7 +126,7 @@
    "note": ""
   },
   {
-   "w": "16/08",
+   "w": "17/08",
    "saldo": 99.72,
    "pnl": 2.0,
    "r": 1.01,
@@ -148,7 +148,7 @@
  "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "16/08 23:51",
+   "data": "17/08 00:31",
    "moneta": "LINK",
    "side": "long",
    "pnl_perc": 2.06,
@@ -156,7 +156,7 @@
    "motivo": "trailing_f2"
   },
   {
-   "data": "16/08 23:51",
+   "data": "17/08 00:31",
    "moneta": "WLD",
    "side": "long",
    "pnl_perc": 4.011,

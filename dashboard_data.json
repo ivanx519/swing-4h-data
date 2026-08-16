@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "16/08/2026 16:42",
+  "generato": "16/08/2026 16:57",
   "saldo": 98.38,
   "budget": 100.0,
   "bot_attivo": true,
@@ -153,12 +153,12 @@
    "prezzo": 0.3472,
    "pnl_perc": -1.22,
    "fase": 0,
-   "ore": 18.7
+   "ore": 18.9
   }
  ],
  "trade_recenti": [
   {
-   "data": "16/08 16:42",
+   "data": "16/08 16:57",
    "moneta": "LINK",
    "side": "long",
    "pnl_perc": 2.06,

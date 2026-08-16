@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "16/08/2026 16:57",
+  "generato": "16/08/2026 17:32",
   "saldo": 98.38,
   "budget": 100.0,
   "bot_attivo": true,
@@ -150,15 +150,15 @@
    "moneta": "WLD",
    "side": "long",
    "entry": 0.3515,
-   "prezzo": 0.3472,
-   "pnl_perc": -1.22,
+   "prezzo": 0.3519,
+   "pnl_perc": 0.11,
    "fase": 0,
-   "ore": 18.9
+   "ore": 19.5
   }
  ],
  "trade_recenti": [
   {
-   "data": "16/08 16:57",
+   "data": "16/08 17:32",
    "moneta": "LINK",
    "side": "long",
    "pnl_perc": 2.06,

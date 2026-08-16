@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "16/08/2026 18:58",
-  "saldo": 98.38,
+  "generato": "16/08/2026 19:29",
+  "saldo": 99.72,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "STABILE"
@@ -127,11 +127,11 @@
   },
   {
    "w": "16/08",
-   "saldo": 98.38,
-   "pnl": 0.66,
-   "r": 0.69,
-   "win": 1,
-   "tot": 1,
+   "saldo": 99.72,
+   "pnl": 2.0,
+   "r": 1.01,
+   "win": 2,
+   "tot": 2,
    "note": "in corso",
    "live": true
   }
@@ -141,29 +141,27 @@
   "qualificati": 6,
   "pendenti": 6,
   "entrati": 2,
-  "win": 1,
+  "win": 2,
   "loss": 0,
   "be": 0
  },
- "posizioni_aperte": [
-  {
-   "moneta": "WLD",
-   "side": "long",
-   "entry": 0.3515,
-   "prezzo": 0.3688,
-   "pnl_perc": 4.92,
-   "fase": 3,
-   "ore": 21.0
-  }
- ],
+ "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "16/08 18:58",
+   "data": "16/08 19:29",
    "moneta": "LINK",
    "side": "long",
    "pnl_perc": 2.06,
    "pnl_euro": 0.663,
    "motivo": "trailing_f2"
+  },
+  {
+   "data": "16/08 19:29",
+   "moneta": "WLD",
+   "side": "long",
+   "pnl_perc": 4.011,
+   "pnl_euro": 1.34,
+   "motivo": "trailing_f3"
   }
  ]
 }

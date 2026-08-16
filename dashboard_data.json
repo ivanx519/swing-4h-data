@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "16/08/2026 22:35",
+  "generato": "16/08/2026 22:55",
   "saldo": 99.72,
   "budget": 100.0,
   "bot_attivo": true,
@@ -148,7 +148,7 @@
  "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "16/08 22:35",
+   "data": "16/08 22:55",
    "moneta": "LINK",
    "side": "long",
    "pnl_perc": 2.06,
@@ -156,7 +156,7 @@
    "motivo": "trailing_f2"
   },
   {
-   "data": "16/08 22:35",
+   "data": "16/08 22:55",
    "moneta": "WLD",
    "side": "long",
    "pnl_perc": 4.011,

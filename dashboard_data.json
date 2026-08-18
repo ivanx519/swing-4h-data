@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "18/08/2026 16:49",
+  "generato": "18/08/2026 18:02",
   "saldo": 99.72,
   "budget": 100.0,
   "bot_attivo": true,
@@ -146,14 +146,24 @@
   }
  ],
  "funnel": {
-  "grezzi": 414,
+  "grezzi": 444,
   "qualificati": 2,
   "pendenti": 2,
-  "entrati": 0,
+  "entrati": 1,
   "win": 0,
   "loss": 0,
   "be": 0
  },
- "posizioni_aperte": [],
+ "posizioni_aperte": [
+  {
+   "moneta": "SOL",
+   "side": "long",
+   "entry": 77.158,
+   "prezzo": 77.223,
+   "pnl_perc": 0.08,
+   "fase": 0,
+   "ore": 0.0
+  }
+ ],
  "trade_recenti": []
 }

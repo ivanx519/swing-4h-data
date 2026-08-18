@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "19/08/2026 01:30",
+  "generato": "19/08/2026 01:55",
   "saldo": 99.72,
   "budget": 100.0,
   "bot_attivo": true,
@@ -159,10 +159,10 @@
    "moneta": "SOL",
    "side": "long",
    "entry": 77.158,
-   "prezzo": 77.071,
-   "pnl_perc": -0.11,
+   "prezzo": 77.04,
+   "pnl_perc": -0.15,
    "fase": 0,
-   "ore": 7.5
+   "ore": 7.9
   }
  ],
  "trade_recenti": []

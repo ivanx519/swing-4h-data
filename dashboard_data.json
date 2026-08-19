@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "19/08/2026 13:02",
+  "generato": "19/08/2026 13:38",
   "saldo": 99.72,
   "budget": 100.0,
   "bot_attivo": true,
@@ -146,7 +146,7 @@
   }
  ],
  "funnel": {
-  "grezzi": 609,
+  "grezzi": 624,
   "qualificati": 2,
   "pendenti": 2,
   "entrati": 1,
@@ -159,10 +159,10 @@
    "moneta": "SOL",
    "side": "long",
    "entry": 77.158,
-   "prezzo": 77.365,
-   "pnl_perc": 0.27,
+   "prezzo": 77.49,
+   "pnl_perc": 0.43,
    "fase": 0,
-   "ore": 19.0
+   "ore": 19.6
   }
  ],
  "trade_recenti": []

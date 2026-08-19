@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "19/08/2026 16:48",
-  "saldo": 99.72,
+  "generato": "19/08/2026 19:06",
+  "saldo": 101.39,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "STABILE"
@@ -136,34 +136,33 @@
   },
   {
    "w": "19/08",
-   "saldo": 99.72,
-   "pnl": 0,
-   "r": 0.0,
-   "win": 0,
-   "tot": 0,
+   "saldo": 101.39,
+   "pnl": 1.66,
+   "r": 1.91,
+   "win": 1,
+   "tot": 1,
    "note": "in corso",
    "live": true
   }
  ],
  "funnel": {
-  "grezzi": 669,
+  "grezzi": 700,
   "qualificati": 2,
   "pendenti": 2,
   "entrati": 1,
-  "win": 0,
+  "win": 1,
   "loss": 0,
   "be": 0
  },
- "posizioni_aperte": [
+ "posizioni_aperte": [],
+ "trade_recenti": [
   {
+   "data": "19/08 19:06",
    "moneta": "SOL",
    "side": "long",
-   "entry": 77.158,
-   "prezzo": 79.196,
-   "pnl_perc": 2.64,
-   "fase": 2,
-   "ore": 22.8
+   "pnl_perc": 4.889,
+   "pnl_euro": 1.664,
+   "motivo": "trailing_f4"
   }
- ],
- "trade_recenti": []
+ ]
 }

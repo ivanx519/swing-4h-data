@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "20/08/2026 23:57",
+  "generato": "21/08/2026 00:42",
   "saldo": 101.39,
   "budget": 100.0,
   "bot_attivo": true,
@@ -135,7 +135,7 @@
    "note": ""
   },
   {
-   "w": "20/08",
+   "w": "21/08",
    "saldo": 101.39,
    "pnl": 1.66,
    "r": 1.91,
@@ -159,15 +159,15 @@
    "moneta": "TRX",
    "side": "long",
    "entry": 0.33938,
-   "prezzo": 0.33931,
-   "pnl_perc": -0.02,
+   "prezzo": 0.33938,
+   "pnl_perc": 0.0,
    "fase": 0,
-   "ore": 1.9
+   "ore": 2.7
   }
  ],
  "trade_recenti": [
   {
-   "data": "20/08 23:57",
+   "data": "21/08 00:42",
    "moneta": "SOL",
    "side": "long",
    "pnl_perc": 4.889,

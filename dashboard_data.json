@@ -1,8 +1,8 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "21/08/2026 10:53",
-  "saldo": 101.39,
+  "generato": "21/08/2026 11:49",
+  "saldo": 102.18,
   "budget": 100.0,
   "bot_attivo": true,
   "btc": "STABILE"
@@ -136,21 +136,21 @@
   },
   {
    "w": "21/08",
-   "saldo": 101.39,
-   "pnl": 1.66,
-   "r": 1.91,
-   "win": 1,
-   "tot": 1,
+   "saldo": 102.18,
+   "pnl": 2.46,
+   "r": 1.35,
+   "win": 2,
+   "tot": 2,
    "note": "in corso",
    "live": true
   }
  ],
  "funnel": {
-  "grezzi": 1124,
+  "grezzi": 1140,
   "qualificati": 4,
   "pendenti": 4,
   "entrati": 3,
-  "win": 1,
+  "win": 2,
   "loss": 0,
   "be": 0
  },
@@ -159,29 +159,28 @@
    "moneta": "TRX",
    "side": "long",
    "entry": 0.33938,
-   "prezzo": 0.33997,
-   "pnl_perc": 0.17,
+   "prezzo": 0.34169,
+   "pnl_perc": 0.68,
    "fase": 0,
-   "ore": 12.9
-  },
-  {
-   "moneta": "WLD",
-   "side": "long",
-   "entry": 0.3789,
-   "prezzo": 0.3899,
-   "pnl_perc": 2.9,
-   "fase": 2,
-   "ore": 0.9
+   "ore": 13.8
   }
  ],
  "trade_recenti": [
   {
-   "data": "21/08 10:53",
+   "data": "21/08 11:49",
    "moneta": "SOL",
    "side": "long",
    "pnl_perc": 4.889,
    "pnl_euro": 1.664,
    "motivo": "trailing_f4"
+  },
+  {
+   "data": "21/08 11:49",
+   "moneta": "WLD",
+   "side": "long",
+   "pnl_perc": 2.349,
+   "pnl_euro": 0.791,
+   "motivo": "trailing_f3"
   }
  ]
 }

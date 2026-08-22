@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "v2.10",
-  "generato": "22/08/2026 14:54",
+  "generato": "22/08/2026 15:40",
   "saldo": 102.98,
   "budget": 100.0,
   "bot_attivo": true,
@@ -157,7 +157,7 @@
  "posizioni_aperte": [],
  "trade_recenti": [
   {
-   "data": "22/08 14:54",
+   "data": "22/08 15:40",
    "moneta": "SOL",
    "side": "long",
    "pnl_perc": 4.889,
@@ -165,7 +165,7 @@
    "motivo": "trailing_f4"
   },
   {
-   "data": "22/08 14:54",
+   "data": "22/08 15:40",
    "moneta": "WLD",
    "side": "long",
    "pnl_perc": 2.349,
@@ -173,7 +173,7 @@
    "motivo": "trailing_f3"
   },
   {
-   "data": "22/08 14:54",
+   "data": "22/08 15:40",
    "moneta": "TRX",
    "side": "long",
    "pnl_perc": 2.378,
